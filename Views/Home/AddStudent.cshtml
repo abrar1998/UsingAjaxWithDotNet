@@ -1,0 +1,207 @@
+﻿@model AjaxDotNet.Models.Student
+
+@{
+    ViewData["Title"] = "AddStudent";
+}
+
+
+
+<div class="alert alert-success alert-dismissible fade show" role="alert" id="successMessage" style="display: none;">
+    <strong>Success!</strong> Form Submitted Successfully..
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<br />
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form enctype="multipart/form-data" id="myForm">
+                <h1 class="text-center mb-4 text-primary" style="font-family: 'Arial Black', sans-serif;">Student Registration</h1>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+              
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" required />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Age" class="control-label"></label>
+                    <input asp-for="Age" class="form-control" required />
+                    <span asp-validation-for="Age" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Address" class="control-label"></label>
+                    <input asp-for="Address" class="form-control" required />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Photo" class="control-label"></label>
+                    <input asp-for="Photo" class="form-control" type="file" required />
+                    <span asp-validation-for="Photo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Country" class="control-label"></label>
+                    <select asp-for="Country" class="form-control" asp-items="ViewBag.Country" id="ddcountry" required >
+                        <option >Select Country</option>
+                        @if (ViewBag.Countries !=null)
+                        {
+                            @foreach (var item in ViewBag.Countries)
+                            {
+                                <option value="@item.CountryId">@item.CountryName</option>
+                            }
+                        }
+                    </select>
+                    <span asp-validation-for="Country" class="text-danger"></span>
+                </div>
+                <div class="form-group" id="dstate" style="display:none">
+                    <label asp-for="State" class="control-label"></label>
+                    <select asp-for="State" class="form-control" id="ddstate" required>
+                      
+                    </select>
+                    <span asp-validation-for="State" class="text-danger"></span>
+                </div>
+                <div class="form-group" id="dcountry" style="display:none">
+                    <label asp-for="City" class="control-label"></label>
+                    <select asp-for="City" class="form-control" id="ddcity" required>
+                        
+                    </select>
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <button type="button" id="submitBtn" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+            <br />
+            <div class="alert alert-success alert-dismissible fade show" role="alert" id="successMessage2" style="display: none;">
+                <strong>Success!</strong> Form Submitted Successfully..
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $(document).ready(() => {
+
+       
+        //upload student form
+        $('#submitBtn').click(() => {
+            if ($('#myForm')[0].checkValidity()) {
+                let formdata = new FormData($('#myForm')[0]);
+                $.ajax({
+                    url:"@Url.Action("AddStudent","Home")",
+                    type:'POST',
+                    data: formdata,
+                    contentType: false,
+                    processData: false, 
+                    success: function (res) {
+                        console.log(res);
+                        $('#successMessage').fadeIn();
+                        $('#successMessage2').fadeIn();
+                        setTimeout(() => {
+                            $('#successMessage').fadeOut();
+                            $('#successMessage2').fadeOut();
+                        }, 6000);
+                    },
+                    error: function (xhr, status, error) {
+                        alert("Failed to Submitted the form");
+                    },
+                });
+
+            } else {
+               
+                $('#myForm').addClass('was-validated');
+                
+            }
+        });
+
+
+        //get state
+
+        $('#ddcountry').change(function () {
+            
+            GetState();
+        });
+        function GetState(){
+            $('#dstate').show();
+            var StateName = $('#ddstate').empty();
+           // StateName.empty();
+
+            $.ajax({
+                type:'POST',
+                 url:"@Url.Action("GetStates","Home")",
+                data: { Cid:$('#ddcountry').val() },
+                dataType:"json",
+                success: function (result) {
+                    console.log(result);
+                    StateName.append($('<option>', { value: "", text: "Choose State" }));
+                    $.each(result, function (index, value) {
+                        console.log(value);
+                        
+                         StateName.append($('<option>', {value:value.stateId,text:value.stateName}));
+                    });
+
+                },
+                error: function (request, status, error) {
+                    console.log('Failed...');
+                },
+            });
+        }
+
+        //get city
+
+        $('#ddstate').change(function () {
+            GetCity();
+        });
+        function GetCity() {
+            $('#dcountry').show();
+            var CityName = $('#ddcity').empty();
+            // StateName.empty();
+
+            $.ajax({
+                type: 'POST',
+                url: "@Url.Action("GetCities", "Home")",
+                data: { Cid: $('#ddstate').val() },
+                dataType: "json",
+                success: function (result) {
+                    console.log(result);
+                    CityName.append($('<option>', { value:"" , text: "Choose City" }));
+                    $.each(result, function (index, value) {
+                        console.log(value);
+
+                        CityName.append($('<option>', { value: value.cityId, text: value.cityName }));
+                    });
+
+                },
+                error: function (request, status, error) {
+                    console.log('Failed...');
+                },
+            });
+        }
+
+
+
+    });
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

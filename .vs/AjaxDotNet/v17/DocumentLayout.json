@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C-Sharp\\.NET7\\AjaxDotNet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{735EB055-74BF-4556-9DF1-56F697E6B7BD}|AjaxDotNet.csproj|d:\\c-sharp\\.net7\\ajaxdotnet\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{735EB055-74BF-4556-9DF1-56F697E6B7BD}|AjaxDotNet.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735EB055-74BF-4556-9DF1-56F697E6B7BD}|AjaxDotNet.csproj|d:\\c-sharp\\.net7\\ajaxdotnet\\views\\home\\addstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{735EB055-74BF-4556-9DF1-56F697E6B7BD}|AjaxDotNet.csproj|solutionrelative:views\\home\\addstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735EB055-74BF-4556-9DF1-56F697E6B7BD}|AjaxDotNet.csproj|d:\\c-sharp\\.net7\\ajaxdotnet\\models\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{735EB055-74BF-4556-9DF1-56F697E6B7BD}|AjaxDotNet.csproj|solutionrelative:models\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735EB055-74BF-4556-9DF1-56F697E6B7BD}|AjaxDotNet.csproj|d:\\c-sharp\\.net7\\ajaxdotnet\\models\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{735EB055-74BF-4556-9DF1-56F697E6B7BD}|AjaxDotNet.csproj|solutionrelative:models\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735EB055-74BF-4556-9DF1-56F697E6B7BD}|AjaxDotNet.csproj|d:\\c-sharp\\.net7\\ajaxdotnet\\models\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{735EB055-74BF-4556-9DF1-56F697E6B7BD}|AjaxDotNet.csproj|solutionrelative:models\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735EB055-74BF-4556-9DF1-56F697E6B7BD}|AjaxDotNet.csproj|d:\\c-sharp\\.net7\\ajaxdotnet\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{735EB055-74BF-4556-9DF1-56F697E6B7BD}|AjaxDotNet.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735EB055-74BF-4556-9DF1-56F697E6B7BD}|AjaxDotNet.csproj|d:\\c-sharp\\.net7\\ajaxdotnet\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{735EB055-74BF-4556-9DF1-56F697E6B7BD}|AjaxDotNet.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\C-Sharp\\.NET7\\AjaxDotNet\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "D:\\C-Sharp\\.NET7\\AjaxDotNet\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AQIAAAwAAABgZmZmZmYiwBUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T10:54:03.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "City.cs",
+              "DocumentMoniker": "D:\\C-Sharp\\.NET7\\AjaxDotNet\\Models\\City.cs",
+              "RelativeDocumentMoniker": "Models\\City.cs",
+              "ToolTip": "D:\\C-Sharp\\.NET7\\AjaxDotNet\\Models\\City.cs",
+              "RelativeToolTip": "Models\\City.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T10:53:58.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "State.cs",
+              "DocumentMoniker": "D:\\C-Sharp\\.NET7\\AjaxDotNet\\Models\\State.cs",
+              "RelativeDocumentMoniker": "Models\\State.cs",
+              "ToolTip": "D:\\C-Sharp\\.NET7\\AjaxDotNet\\Models\\State.cs",
+              "RelativeToolTip": "Models\\State.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T10:53:47.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Country.cs",
+              "DocumentMoniker": "D:\\C-Sharp\\.NET7\\AjaxDotNet\\Models\\Country.cs",
+              "RelativeDocumentMoniker": "Models\\Country.cs",
+              "ToolTip": "D:\\C-Sharp\\.NET7\\AjaxDotNet\\Models\\Country.cs",
+              "RelativeToolTip": "Models\\Country.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T10:53:34.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddStudent.cshtml",
+              "DocumentMoniker": "D:\\C-Sharp\\.NET7\\AjaxDotNet\\Views\\Home\\AddStudent.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\AddStudent.cshtml",
+              "ToolTip": "D:\\C-Sharp\\.NET7\\AjaxDotNet\\Views\\Home\\AddStudent.cshtml",
+              "RelativeToolTip": "Views\\Home\\AddStudent.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-16T09:15:38.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\C-Sharp\\.NET7\\AjaxDotNet\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\C-Sharp\\.NET7\\AjaxDotNet\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAADgAAAAAZmZmZmYOwEUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T03:56:46.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C-Sharp\\.NET7\\AjaxDotNet\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\C-Sharp\\.NET7\\AjaxDotNet\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAmwD8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T03:52:21.986Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
